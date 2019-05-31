@@ -2996,7 +2996,7 @@ class NO(Norway):
 
 
 class Italy(HolidayBase):
-    PROVINCES = ['AN', 'AO', 'BA', 'BL', 'BO',
+    PROVINCES = ['AN', 'AO', 'BA', 'BG', 'BL', 'BO',
                  'BZ', 'BS', 'CB', 'CT', 'Cesena',
                  'CH', 'CS', 'KR', 'EN', 'FE', 'FI',
                  'FC', 'Forli', 'FR', 'GE', 'GO', 'IS',
@@ -3037,6 +3037,8 @@ class Italy(HolidayBase):
                 self[date(year, SEP, 7)] = "San Grato"
             elif self.prov in ('BA'):
                 self[date(year, DEC, 6)] = "San Nicola"
+            elif self.prov == 'BG':
+                self[date(year, AUG, 26)] = "Sant'Alessandro"
             elif self.prov == 'BL':
                 self[date(year, NOV, 11)] = "San Martino"
             elif self.prov in ('BO'):
